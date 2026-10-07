@@ -41,10 +41,41 @@
 
 @media (max-width: 640px) {
   :root { --gutter: 18px; }
+
+  /* Mobile reading rhythm: less empty vertical space, larger supporting copy. */
+  .hero { min-height: auto; padding: 92px 0 52px; }
+  .journey { padding: 60px 0; }
+  .work-intro { padding: 64px 0 38px; }
+  .case { padding: 64px 0; }
+  .other-work { padding: 64px 0; }
+  .capabilities { padding: 64px 0; }
+  .about { padding: 64px 0; }
+  .contact { padding: 68px 0 28px; }
+
+  .case__header { margin-bottom: 34px; }
+  .other-work__heading { margin-bottom: 42px; }
+  .capabilities__top { margin-bottom: 36px; }
+  .contact-options { margin-top: 44px; }
+  .contact__footer { margin-top: 44px; }
+
+  .kicker { font-size: 12px; line-height: 1.45; }
+  .hero__intro,
+  .journey__heading > p:last-child,
+  .case__header > p,
+  .about__copy > p:not(.kicker),
+  .contact__intro > p:last-child { font-size: 17px; line-height: 1.65; }
+  .story__copy > p:not(.case__number),
+  .capability-list p,
+  .work-intro__aside { font-size: 16px; line-height: 1.65; }
+  .case__meta span { font-size: 11px; }
+  .brand-rail p { font-size: 12px; }
+  .brand-rail__names span { font-size: 13px; }
+  .contact-option small { font-size: 12px; }
+  .contact-option div > span { font-size: 14px; }
   .site-header { padding-inline: 18px; }
   .wordmark span:first-child { display: none; }
   .wordmark span:last-child { margin: 0; font-size: 22px; }
-  .header-cta { font-size: 11px; }
+  .header-cta { font-size: 12px; }
   h1 { font-size: clamp(56px,16vw,78px); }
   h2 { font-size: clamp(46px,13vw,68px); }
   h3 { font-size: clamp(38px,11vw,54px); }
@@ -63,7 +94,6 @@
   .collage-note strong { font-size: 17px; }
   .collage-stamp { width: 86px; bottom: 66px; }
   .collage-stamp span { font-size: 31px; }
-  .journey { padding-block: 84px; }
   .journey-track { margin-top: 42px; }
   .journey-step { flex-basis: 132px; min-height: 132px; }
   .work-intro__grid, .case__header, .capabilities__top { grid-template-columns: 1fr; gap: 18px; }

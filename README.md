@@ -38,3 +38,11 @@ Netlify should deploy automatically from the connected GitHub repository.
 - Email: asadshahidch01@gmail.com
 - LinkedIn: https://www.linkedin.com/in/muhammad-asad-109b6b1b6
 - WhatsApp: +92 343 4335875
+
+
+## V3.1 readability pass
+
+- Increased small labels, captions, links, navigation and supporting text.
+- Increased contrast on secondary text.
+- Reduced mobile section top/bottom spacing for a tighter reading flow.
+- Kept large display typography and existing editorial art direction intact.
