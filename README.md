@@ -59,3 +59,10 @@ Netlify should deploy automatically from the connected GitHub repository.
 - Kept Pelsbarn focused on the purchasing/variant UI.
 - Reduced mobile section padding while keeping Legacare and Parmint spacious.
 - Made Email the primary contact route, with LinkedIn and WhatsApp as secondary paths.
+
+## V3.2 polish
+- Updated the About portrait to the newer casual headshot.
+- Refined Purelia so performance context and funnel architecture read as separate evidence layers.
+- Made email the clear primary contact route, with LinkedIn and WhatsApp as balanced secondary cards.
+- Added light SEO/social metadata and a simple favicon.
+- Added small spacing, image and hover refinements without changing the V3 visual direction.
