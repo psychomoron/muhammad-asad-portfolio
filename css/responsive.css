@@ -1,0 +1,166 @@
+@media (max-width: 900px) {
+  .site-header {
+    grid-template-columns: 1fr auto;
+  }
+
+  .site-nav {
+    display: none;
+  }
+
+  .hero__grid,
+  .project,
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-system {
+    order: 2;
+  }
+
+  .project__meta {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .project-grid,
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .proof-strip__inner {
+    justify-content: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --gutter: 18px;
+  }
+
+  .site-header {
+    padding-block: 14px;
+  }
+
+  .site-header .button {
+    padding-inline: 14px;
+    font-size: 12px;
+  }
+
+  .hero__actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .system-placeholder {
+    min-height: 360px;
+  }
+
+  .site-footer__inner {
+    padding-block: 28px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .project-gallery {
+    min-height: 620px;
+  }
+
+  .project-gallery--legacare .media-frame--main {
+    width: 78%;
+    height: 42%;
+    left: 4%;
+  }
+
+  .project-gallery--legacare .media-frame--phone {
+    width: 25%;
+    height: 54%;
+    right: 4%;
+  }
+
+  .project-gallery--parmint .media-frame--main {
+    width: 67%;
+  }
+
+  .project-gallery--parmint .media-frame--phone {
+    width: 24%;
+    right: 3%;
+  }
+}
+
+@media (max-width: 640px) {
+  .project-gallery {
+    min-height: 500px;
+  }
+
+  .project-gallery--legacare .media-frame--main {
+    width: 86%;
+    height: 38%;
+    left: 7%;
+    top: 7%;
+  }
+
+  .project-gallery--legacare .media-frame--wide {
+    width: 83%;
+    height: 22%;
+    left: 7%;
+    right: auto;
+    bottom: 8%;
+  }
+
+  .project-gallery--legacare .media-frame--phone {
+    width: 29%;
+    height: 45%;
+    right: 4%;
+    top: 35%;
+  }
+
+  .project-gallery--legacare .media-frame--map {
+    width: 47%;
+    height: 22%;
+    left: 4%;
+    bottom: 25%;
+  }
+
+  .project-gallery--parmint .media-frame--main {
+    width: 76%;
+    height: 39%;
+    left: 5%;
+  }
+
+  .project-gallery--parmint .media-frame--phone {
+    width: 27%;
+    height: 49%;
+    right: 3%;
+    top: 16%;
+  }
+
+  .project-gallery--parmint .media-frame--integrations {
+    width: 55%;
+    height: 28%;
+    left: 5%;
+    bottom: 6%;
+  }
+
+  .project-gallery--parmint .media-frame--webhooks {
+    width: 55%;
+    height: 20%;
+    right: 4%;
+    bottom: 11%;
+  }
+
+  .project-gallery--parmint .media-frame--map {
+    width: 43%;
+    height: 23%;
+    right: 12%;
+    top: 38%;
+  }
+
+  .project-card__preview {
+    height: 210px;
+  }
+}
