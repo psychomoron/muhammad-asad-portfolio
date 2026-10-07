@@ -1,66 +1,28 @@
 :root {
-  --bg: #080b0a;
-  --bg-rgb: 8, 11, 10;
-  --surface: #0f1411;
-  --surface-2: #141a16;
-  --surface-3: #1a211c;
-  --text: #f2f0e8;
-  --text-rgb: 242, 240, 232;
-  --muted: #949c96;
-  --muted-2: #656d68;
-  --line: rgba(255, 255, 255, 0.09);
-  --line-strong: rgba(255, 255, 255, 0.16);
-  --accent: #b8ff59;
-  --accent-rgb: 184, 255, 89;
-  --accent-2: #8ddcff;
-
-  --container: 1320px;
-  --gutter: clamp(20px, 4vw, 62px);
-
-  --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --bone: #f3f0e8;
+  --paper: #fbf9f3;
+  --ink: #171915;
+  --muted: #686b63;
+  --forest: #17392d;
+  --forest-deep: #0f2a20;
+  --sage: #dce6d7;
+  --blush: #e6c9bf;
+  --blush-soft: #f1ddd5;
+  --sand: #e8ddca;
+  --acid: #c9f66b;
+  --line: rgba(23, 25, 21, .16);
+  --line-light: rgba(255, 255, 255, .18);
+  --container: 1360px;
+  --gutter: clamp(20px, 4vw, 64px);
+  --sans: "Manrope", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --serif: "Instrument Serif", Georgia, serif;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-  background: var(--bg);
-}
-
-body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  font-family: var(--font-sans);
-  line-height: 1.5;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-button,
-input,
-textarea,
-select {
-  font: inherit;
-}
-
-::selection {
-  background: var(--accent);
-  color: #071008;
-}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bone); color: var(--ink); font-family: var(--sans); line-height: 1.55; overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+button, input, textarea, select { font: inherit; }
+figure { margin: 0; }
+::selection { background: var(--forest); color: var(--paper); }

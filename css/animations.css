@@ -1,53 +1,10 @@
-.site-noise {
-  position: fixed;
-  inset: 0;
-  z-index: 999;
-  pointer-events: none;
-  opacity: 0.027;
-  background-image: radial-gradient(circle at 20% 20%, #fff 0 0.5px, transparent 0.65px);
-  background-size: 5px 5px;
-}
-
-@keyframes lineFlow {
-  to { stroke-dashoffset: -40; }
-}
-
-@keyframes scrollLine {
-  0%, 15% { transform: translateX(-100%); }
-  55%, 75% { transform: translateX(0); }
-  100% { transform: translateX(100%); }
-}
-
-@keyframes tickerMove {
-  to { transform: translateX(-50%); }
-}
-
-.proof-strip__track {
-  animation: tickerMove 34s linear infinite;
-}
-
-@keyframes statusPulse {
-  0%, 100% { opacity: .56; transform: scale(.88); }
-  50% { opacity: 1; transform: scale(1.12); }
-}
-
-.status-dot {
-  animation: statusPulse 2.1s ease-in-out infinite;
-}
-
-.js-ready [data-hero-system] {
-  transform-origin: 50% 50%;
-}
-
+.reveal { will-change: transform, opacity; }
+.button, .header-cta, .quiet-link, .architecture-copy a, .parmint-system__copy a, .story__copy a, .purelia-copy a { transition: transform .18s ease, opacity .18s ease, background .18s ease; }
+.button:hover { transform: translateY(-2px); }
+.header-cta:hover, .quiet-link:hover, .architecture-copy a:hover, .parmint-system__copy a:hover, .story__copy a:hover, .purelia-copy a:hover { opacity: .6; }
+.collage-frame { transition: box-shadow .25s ease; }
+.collage-frame:hover { box-shadow: 0 38px 95px rgba(49,43,34,.2); }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
 }
