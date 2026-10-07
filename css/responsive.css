@@ -119,3 +119,91 @@
   .contact-option:hover { padding-inline: 0; }
   .contact__footer { flex-direction: column; }
 }
+
+
+/* V3.1 responsive balance */
+@media (max-width: 860px) {
+  .wordmark { font-size: 14px; }
+  .hero__intro { max-width: 650px; }
+  .story--purelia { grid-template-columns: 1fr; }
+  .purelia-copy { padding: 10px 8px 26px; }
+}
+
+@media (max-width: 640px) {
+  /* Compact mobile rhythm without making the featured case studies feel cramped. */
+  .hero { padding: 86px 0 46px; }
+  .journey { padding: 56px 0; }
+  .work-intro { padding: 56px 0 34px; }
+  .case { padding: 60px 0; }
+  .other-work { padding: 56px 0; }
+  .capabilities { padding: 56px 0; }
+  .about { padding: 56px 0; }
+  .contact { padding: 64px 0 28px; }
+
+  .wordmark {
+    display: inline-flex;
+    font-size: 13.5px;
+    letter-spacing: .02em;
+  }
+  .wordmark span:first-child,
+  .wordmark span:last-child { display: inline; margin: 0; font: inherit; }
+  .site-header .header-cta { font-size: 12.5px; }
+
+  .kicker { font-size: 13px; }
+  .hero__intro,
+  .journey__heading > p:last-child,
+  .case__header > p,
+  .about__copy > p:not(.kicker),
+  .contact__intro > p:last-child {
+    font-size: 17.5px;
+    line-height: 1.62;
+  }
+  .story__copy > p:not(.case__number),
+  .purelia-copy p:not(.case__number),
+  .story__copy--pelsbarn > p:not(.case__number),
+  .capability-list p,
+  .work-intro__aside,
+  .architecture-copy p:not(.kicker),
+  .parmint-system__copy p:not(.kicker) {
+    font-size: 16.5px;
+    line-height: 1.62;
+  }
+  .case__meta span { font-size: 12px; }
+  .brand-rail p { font-size: 12.5px; }
+  .brand-rail__names span { font-size: 13.5px; }
+
+  .journey-step {
+    flex-basis: 145px;
+    min-height: 142px;
+    padding: 17px;
+  }
+  .journey-step small { font-size: 12px; }
+  .journey-step strong { font-size: 18px; }
+  .journey-step span { font-size: 12.5px; }
+
+  .story--mdd .story__wide-image {
+    min-height: 0;
+    padding: 18px;
+  }
+  .story--mdd .story__wide-image img { max-height: none; }
+
+  .story--purelia { padding: 18px; }
+  .purelia-copy { padding: 4px 2px 24px; }
+  .purelia-map { padding: 10px; }
+
+  .contact-options { border-top: 0; }
+  .contact-option { min-height: 124px; }
+  .contact-option--primary {
+    min-height: 144px;
+    margin-top: 0;
+    padding: 18px 14px;
+  }
+  .contact-option--primary:hover { padding: 18px 14px; }
+  .contact-option small { font-size: 12.5px; }
+  .contact-option div > span { font-size: 14.5px; overflow-wrap: anywhere; }
+  .contact__footer { font-size: 12px; }
+}
+
+@media (max-width: 640px) {
+  .pelsbarn-product { max-height: none; }
+}

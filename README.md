@@ -46,3 +46,16 @@ Netlify should deploy automatically from the connected GitHub repository.
 - Increased contrast on secondary text.
 - Reduced mobile section top/bottom spacing for a tighter reading flow.
 - Kept large display typography and existing editorial art direction intact.
+
+
+## V3.1 balance/readability pass
+
+- Increased small labels, nav, metadata and supporting copy for better readability.
+- Simplified the Muhammad Asad wordmark.
+- Updated the 8–9 figure DTC proof point wording.
+- Improved customer-journey hierarchy.
+- Preserved full funnel maps instead of cropping them.
+- Made Purelia's dashboard a wider performance artifact with the funnel map shown in full.
+- Kept Pelsbarn focused on the purchasing/variant UI.
+- Reduced mobile section padding while keeping Legacare and Parmint spacious.
+- Made Email the primary contact route, with LinkedIn and WhatsApp as secondary paths.

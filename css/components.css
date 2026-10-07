@@ -142,3 +142,188 @@ h4 { margin-bottom: 18px; font-size: clamp(30px,3vw,48px); line-height: 1; lette
 .contact-option div > span { display: block; margin-top: 6px; color: #acb6b0; font-size: 15px; }
 .contact-option b { justify-self: end; font-size: 24px; font-weight: 400; }
 .contact__footer { color: #98a39c; font-size: 12px; text-transform: uppercase; letter-spacing: .07em; }
+
+
+/* V3.1 — balance + readability pass */
+.wordmark {
+  display: inline-flex;
+  align-items: center;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: .035em;
+  white-space: nowrap;
+}
+.site-nav a,
+.header-cta { font-size: 15px; }
+
+.kicker {
+  font-size: 14px;
+  line-height: 1.45;
+  letter-spacing: .085em;
+}
+
+.hero__intro {
+  max-width: 590px;
+  font-size: clamp(19px,1.55vw,23px);
+  line-height: 1.65;
+}
+.quiet-link { font-size: 15px; }
+.hero__proof strong { font-size: 20px; }
+.hero__proof span {
+  font-size: 14px;
+  line-height: 1.45;
+  letter-spacing: .045em;
+  text-transform: none;
+}
+
+.browser-bar small { font-size: 12.5px; }
+.collage-note span,
+.collage-note small { font-size: 12.5px; }
+.collage-stamp small { font-size: 12.5px; }
+
+.brand-rail p { font-size: 13px; }
+.brand-rail__names span { font-size: 15px; }
+
+.journey__heading > p:last-child {
+  max-width: 700px;
+  font-size: 19px;
+  line-height: 1.65;
+}
+.journey-step {
+  flex-basis: 164px;
+  min-height: 160px;
+  padding: 20px;
+}
+.journey-step small { font-size: 13px; }
+.journey-step strong {
+  font-size: 20px;
+  letter-spacing: -.025em;
+}
+.journey-step span {
+  margin-top: 7px;
+  font-size: 13.5px;
+  line-height: 1.35;
+}
+
+.work-intro__aside { font-size: 19px; line-height: 1.65; }
+.case__number { font-size: 13px; }
+.case__meta span {
+  font-size: 13px;
+  line-height: 1.2;
+}
+.case__header > p {
+  font-size: 19px;
+  line-height: 1.68;
+}
+.case-note small { font-size: 13px; }
+.case-note strong { font-size: 23px; line-height: 1.12; }
+.architecture-copy p:not(.kicker),
+.parmint-system__copy p:not(.kicker) {
+  font-size: 18px;
+  line-height: 1.68;
+}
+.architecture-copy a,
+.parmint-system__copy a,
+.story__copy a,
+.purelia-copy a {
+  font-size: 15.5px;
+}
+.parmint-mosaic__integrations figcaption,
+.purelia-dashboard figcaption { font-size: 13px; }
+.parmint-proof span { font-size: 13px; }
+
+.story__copy > p:not(.case__number),
+.purelia-copy p:not(.case__number),
+.story__copy--pelsbarn > p:not(.case__number) {
+  font-size: 18.5px;
+  line-height: 1.68;
+}
+
+/* Show architecture diagrams as diagrams, not cropped thumbnails. */
+.story--mdd .story__wide-image {
+  min-height: 520px;
+  padding: 36px;
+  background: rgba(255,255,255,.24);
+}
+.story--mdd .story__wide-image img {
+  width: 100%;
+  height: auto;
+  max-height: 540px;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+/* Purelia: performance first, then the full system map. */
+.story--purelia {
+  grid-template-columns: .42fr 1.58fr;
+  padding: 34px;
+}
+.purelia-copy { padding: 26px 34px 26px 8px; }
+.purelia-dashboard {
+  width: 100%;
+  padding: 18px;
+}
+.purelia-dashboard img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+.purelia-map {
+  margin-top: 18px;
+  padding: 18px;
+}
+.purelia-map img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+}
+
+/* Keep Pelsbarn focused on the actual purchase/variant interface. */
+.pelsbarn-product {
+  max-height: none;
+  overflow: hidden;
+}
+.pelsbarn-product img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.capability-list article > span { font-size: 14px; }
+.capability-list p {
+  font-size: 18px;
+  line-height: 1.68;
+}
+.about__caption { font-size: 13px; }
+.about__copy > p:not(.kicker) {
+  font-size: 19px;
+  line-height: 1.72;
+}
+.contact__intro > p:last-child {
+  font-size: 19px;
+  line-height: 1.65;
+}
+.contact-option__index { font-size: 13px; }
+.contact-option small { font-size: 13px; }
+.contact-option div > span { font-size: 16px; }
+.contact__footer { font-size: 13px; }
+
+/* Email is the primary path; LinkedIn/WhatsApp remain easy secondary options. */
+.contact-option--primary {
+  min-height: 150px;
+  margin-top: 14px;
+  padding-inline: 22px;
+  border: 1px solid rgba(201,246,107,.52);
+  border-radius: 20px;
+  background: rgba(201,246,107,.075);
+}
+.contact-option--primary:hover {
+  padding-inline: 28px;
+  background: rgba(201,246,107,.12);
+}
+.contact-option--primary strong {
+  font-size: clamp(25px,2.35vw,34px);
+}
