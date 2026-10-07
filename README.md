@@ -115,3 +115,16 @@ We'll also add:
   - `pelsbarn-custom-variants-pdp.png` — custom PDP / offer variant UI
 
 The images above are now wired into `index.html`; you do not need to add them manually.
+
+## Visual pass V2
+
+This version adds:
+- final contact email: `asadshahidch01@gmail.com`
+- upgraded navigation and hero
+- animated ecommerce system diagram
+- moving capability/status strip
+- refined Legacare featured-case-study composition
+- initial GSAP/ScrollTrigger motion
+- improved responsive behavior
+
+GSAP is loaded from jsDelivr in `index.html`. The page remains readable and usable if that CDN is unavailable.
